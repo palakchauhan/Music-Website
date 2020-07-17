@@ -1,1 +1,28 @@
+# File types #
+##############
+*.pyc
+*.swo
+*.swp
+*.swn
+
+# Directories #
+###############
+logs/
+
+# Specific files #
+##################
 webpractice/settings.py
+
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+*~
+
+*.tmlanguage.cache 
+*.tmPreferences.cache 
+*.stTheme.cache 
+*.sublime-workspace 
+*.sublime-project 
