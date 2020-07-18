@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Ringo{% endblock %}</title>
+    <title>{% block title %}Musically{% endblock %}</title>
     {% load static %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'music/style.css' %}"/>﻿
 </head>
 <body>
+
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
 
@@ -23,7 +24,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="{% url 'music:index' %}">Ringo</a>
+            <a class="navbar-brand" href="{% url 'music:index' %}">Musically</a>
         </div>
 
 
@@ -44,7 +45,7 @@
                 </li>
 
             </ul>
--->
+            
             <ul class="nav navbar-nav navbar-right">
 
                 {% if user.is_authenticated %}
