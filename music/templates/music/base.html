@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Musically{% endblock %}</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ-p-2agYLZM9QxUmk9m3uivIvuRElNZe_qYQ&usqp=CAU" type="image/icon type">
     {% load static %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
@@ -24,7 +25,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="{% url 'music:index' %}">Musically</a>
+            <a class="navbar-brand" href="{% url 'music:index' %}"><span class="glyphicon glyphicon-equalizer" aria-hidden="true"></span>&nbsp;Musically</a>
         </div>
 
 
