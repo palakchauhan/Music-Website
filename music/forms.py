@@ -7,6 +7,14 @@ class UserForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ['username', 'email', 'password']
+        fields = [
+        'username', 
+        'email', 
+        'password',
+        ]
 
-
+    def clean_email(self,*args,**kwargs):
+    	email=self.cleaned_data.get("email")
+    	if not email.endswith("com"):
+    		raise forms.ValidationError("Not a valid email")
+    	return email
